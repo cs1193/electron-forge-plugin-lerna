@@ -1,0 +1,32 @@
+{
+  "name": "@electron-forge/plugin-lerna",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chandresh Rajkumar Manonmani <cs1193@gmail.com> (chandreshrm.name)",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@electron-forge/async-ora": "^6.0.0-beta.57",
+    "@electron-forge/plugin-base": "^6.0.0-beta.57",
+    "@electron-forge/shared-types": "^6.0.0-beta.57",
+    "@electron-forge/web-multi-logger": "^6.0.0-beta.57",
+    "debug": "^4.3.1",
+    "fs-extra": "^10.0.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/fs-extra": "^9.0.11",
+    "@types/lodash": "^4.14.170",
+    "@types/node": "^15.12.2",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "typescript": "^4.3.2"
+  }
+}
