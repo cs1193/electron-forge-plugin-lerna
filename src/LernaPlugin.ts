@@ -26,6 +26,10 @@ export default class LernaPlugin extends PluginBase<ILernaPlugin> {
 
   getHook(name: string): Function {
     switch (name) {
+      case 'prePackage':
+        return async() => {
+          console.log('prePackage');
+        };
       default:
         return null;
     }
