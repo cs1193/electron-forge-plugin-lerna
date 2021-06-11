@@ -8,7 +8,7 @@
       "es2018"
     ],
     "sourceMap": true,
-    "rootDir": ".",
+    "rootDir": "src",
     "experimentalDecorators": true,
     "strict": true,
     "esModuleInterop": true,

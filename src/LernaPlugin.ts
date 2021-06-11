@@ -1,29 +1,37 @@
+// @ts-nocheck
+
 import PluginBase from '@electron-forge/plugin-base';
 
-import { asyncOra } from '@electron-forge/async-ora';
-import Logger from '@electron-forge/web-multi-logger';
+import { PackageGraph } from '@lerna/package-graph';
+
+// import { asyncOra } from '@electron-forge/async-ora';
 
 import debug from 'debug';
-import fse from 'fs-extra';
+// import fse from 'fs-extra';
 
 const d = debug('electron-forge:plugin:lerna');
-
-const DEFAULT_LOGGER_PORT = 45001;
 
 export interface ILernaPlugin {}
 
 export default class LernaPlugin extends PluginBase<ILernaPlugin> {
   name = 'lerna';
 
-  private log: Logger;
-
-  private loggerPort: number = DEFAULT_LOGGER_PORT;
-
   constructor(opts: ILernaPlugin) {
     super(opts);
 
     d('lerna-plugin:init');
 
-    this.log = new Logger(this.loggerPort);
+    this.getHook = this.getHook.bind(this);
+  }
+
+  getHook(name: string): Function {
+    switch (name) {
+      default:
+        return null;
+    }
+  }
+
+  async startLogic(): Promise<false> {
+    return null;
   }
 }
