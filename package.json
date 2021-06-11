@@ -1,14 +1,24 @@
 {
   "name": "electron-forge-plugin-lerna",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An electron-forge plugin to build electron packages on Lerna monorepo",
+  "homepage": "https://github.com/cs1193/electron-forge-plugin-lerna",
+  "main": "lib/LernaPlugin.js",
+  "typings": "lib/LernaPlugin.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "clean": "rimraf !lib/.gitkeep lib/**/*",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "tsc"
   },
-  "author": "Chandresh Rajkumar Manonmani <cs1193@gmail.com> (chandreshrm.name)",
-  "license": "UNLICENSED",
+  "author": {
+    "name": "Chandresh Rajkumar Manonmani",
+    "email": "cs1193@gmail.com",
+    "url": "http://chandreshrm.name"
+  },
+  "license": "MIT",
   "dependencies": {
     "@electron-forge/async-ora": "^6.0.0-beta.57",
     "@electron-forge/plugin-base": "^6.0.0-beta.57",
